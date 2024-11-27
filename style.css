@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+  }
+
+.content_width{
+    width: 1280px;
+    margin: 0 auto;
+}
+.main_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.select_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_currency{
+    font-weight: 500;
+}
+
+.currency_input{
+    background-color: #e9ecef;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px black;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }

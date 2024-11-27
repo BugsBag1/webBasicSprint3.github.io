@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SprintTask3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_content content_width">
+        <div class="summ">
+            <p>Введите сумму</p>
+            <div class="select_content">
+                <input type="number" id="convertPrice" onchange="select_currency()">
+                <div class="select_currency">
+                    <select id="select_currency" onchange="select_currency()">
+                        <option value="USD">USD</option>
+                        <option value="KZT">KZT</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="currency">
+            <p class="title_currency">KZT (tenge)</p>
+            <input type="text" step="0.01" disabled id="input_kzt" class="currency_input">
+        </div>
+        <div class="currency">
+            <p class="title_currency">USD (dollar)</p>
+            <input type="text" step="0.01" disabled id="input_usd" class="currency_input">
+        </div>
+        <div class="currency">
+            <p class="title_currency">EUR (euro)</p>
+            <input type="text" step="0.01" disabled id="input_eur" class="currency_input">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
