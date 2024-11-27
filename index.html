@@ -11,9 +11,9 @@
         <div class="summ">
             <p>Введите сумму</p>
             <div class="select_content">
-                <input type="number" id="convertPrice" onchange="select_currency()">
-                <div class="select_currency">
-                    <select id="select_currency" onchange="select_currency()">
+                <input type="number" id="convertPrice" onkeyup="select_currency()" class="price_input">
+                <div>
+                    <select id="select_currency" onchange="select_currency()" class="select_currency">
                         <option value="USD">USD</option>
                         <option value="KZT">KZT</option>
                         <option value="EUR">EUR</option>

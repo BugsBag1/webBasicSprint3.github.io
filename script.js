@@ -11,7 +11,7 @@ function select_currency(){
     let input_eur = document.getElementById("input_eur")
     if(selectValue == "USD"){
         let priceKZT = convertPrice * buyUSD
-        let priceEUR = convertPrice * buyUSD / sellEUR
+        let priceEUR = (convertPrice * buyUSD) / sellEUR
         input_kzt.value = priceKZT.toFixed(2)
         input_eur.value = priceEUR.toFixed(2)
         input_usd.value = 0
@@ -23,7 +23,7 @@ function select_currency(){
         input_usd.value = priceUSD.toFixed(2)
     } else if (selectValue == "EUR") {
         let priceKZT = convertPrice * buyEUR
-        let priceUSD = convertPrice * buyEUR / sellUSD
+        let priceUSD = (convertPrice * buyEUR) / sellUSD
         input_kzt.value = priceKZT.toFixed(2)
         input_usd.value = priceUSD.toFixed(2)
         input_eur.value = 0

@@ -33,6 +33,21 @@
     border-radius: 3px;
     border: 1px solid black;
     box-shadow: 1px 1px 4px black;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.price_input{
+  background-color: #e9ecef;
+    border-radius: 3px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px black;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -47,4 +62,17 @@ input[type="number"] {
   input[type="number"]:hover,
   input[type="number"]:focus {
     -moz-appearance: number-input;
+  }
+
+  select {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px black;
   }
